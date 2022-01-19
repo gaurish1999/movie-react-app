@@ -1,27 +1,51 @@
+*{
+  margin: 20px;
+}
 .App {
   text-align: center;
 }
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-.input{
+input, select{
   padding: 10px;
   border-radius: 3px;
+  background-color: orange;
+  /* color: white; */
+  text-transform: capitalize;
+  text-align: center;
+  transition-duration: 0.4s;
+  border: none;
+}
+input:focus{
+  background-color: rgb(146, 146, 209);
+}
+select:focus{
+  cursor: pointer;
+  /* box-shadow: 0 0 5px blue, 0 0 25px blue, 0 0 50px blue; */
+}
+button{
+  padding: 10px;
+  border: none;
+  background-color: rgb(146, 146, 209);
+  border-radius: 5px; 
+  width: 20%;
+  box-shadow: 0 10px 20px black;
+  transition-duration: 0.4s;
+}
+button:hover{
+  cursor: pointer;
+  /* color: rgb(146, 146, 209); */
+  /* background-color: black; */
+  /* box-shadow: 0 0 5px black, 0 0 25px black, 0 0 50px black; */
+  box-shadow: none;
 }
 table{
-  /* display: flex; */
-  /* justify-content: center;
-  align-items: center; */
+  margin: auto;
   border-collapse: collapse;
 }
 td, th{
   padding: 10px;
   /* width: 100%; */
+}
+th{
+  background-color: orange;
+  font-size: x-large;
 }
